@@ -1,0 +1,43 @@
+.clients-section {
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $grey-color;
+    border-radius: 4px;
+
+    color: $grey-color;
+
+    transition: color $transition-timing $timing-function,
+      border-color $transition-timing $timing-function;
+  }
+  &__link:hover {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  &__item {
+    margin-right: 30px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

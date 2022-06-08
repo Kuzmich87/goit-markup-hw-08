@@ -1,0 +1,23 @@
+.logo {
+  /* Селектор на цвет логотипа*/
+  color: $accent-color;
+  font-family: $logo-font-family, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &.link.header{
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;}
+}
+
+/* Селектор на вторую часть логотипа header*/
+.studio {
+  color: $title-text-color;
+}
+
+/* Селектор вторую часть логотипа в footer */
+.studio-sup {
+  color: $white-color;
+}

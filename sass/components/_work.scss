@@ -1,0 +1,45 @@
+.work-section {
+    padding-top: 0px;
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  /*Задает расположение на раздел Чем мы занимаемся*/
+  &__list {
+    display: flex;
+  }
+  &__list .work-section__item + .work-section__item {
+    margin-left: 30px;
+  }
+  /*
+Заголовки картинок в Чем мы занимаемся
+*/
+  &__title-image {
+    color: $white-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__thumb {
+    position: absolute;
+
+    width: 370px;
+    height: 70px;
+
+    background: $work-thumb-background;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+  /*Задаем позицию предку для выравнивания заголовка*/
+  &__item {
+    position: relative;
+  }
+  &__image {
+    display: block;
+  }
+}

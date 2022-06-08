@@ -1,0 +1,17 @@
+.contacts-sup {
+  & .link {
+    color: $contacts-sup-color;
+    font-style: normal;
+    transition: color $transition-timing $timing-function;
+  }
+  & .link:hover,
+  & .link:focus {
+    color: $accent-color;
+  }
+}
+/* Цвет текста места расположение студии*/
+.location {
+  &.link {
+    color: $white-color;
+  }
+}

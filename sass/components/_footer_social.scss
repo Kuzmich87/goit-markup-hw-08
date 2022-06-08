@@ -1,0 +1,51 @@
+/*Стилизация ссылок ф футере соц.сети*/
+.social {
+  &-link {
+    margin-left: 70px;
+    min-width: 206px;
+  }
+
+  &-list.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: 16px;
+    list-style: none;
+    padding: 0;
+  }
+}
+.social {
+  &-link-footer.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    background-color: $social-link-footer-color;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    transition: background-color $transition-timing $timing-function;
+  }
+  &-link-footer.link:hover,
+  &-link-footer.link:focus {
+    background-color: $accent-color;
+  }
+}
+
+/*Задает расположение иконок в футере*/
+.list {
+  &.social {
+    display: flex;
+  }
+}
+
+.title {
+  &.social {
+  color: $white-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;}
+}

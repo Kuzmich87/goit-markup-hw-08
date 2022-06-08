@@ -1,0 +1,89 @@
+.conteiner {
+    &-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $white-color;
+    }
+}
+.section{
+    &.team {
+  background-color: $second-white-color;}
+}
+.text {
+    &-team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;}
+}
+
+.title {
+    &.team {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;}
+   &.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+  text-align: center;
+}
+}
+/*Задает расположение на раздел Наша команда*/
+.list {
+    &.team {
+  display: flex;}
+    &.team .item + .item {
+  margin-left: 30px;
+}
+}
+/*Рамка для карточек Нашей команды*/
+.item {
+    &.team{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;}
+}
+
+/*=======================
+Иконки соц сетей в нашей команде
+=================================*/
+.social {
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 16px;
+    list-style: none;
+    padding: 0;
+  }
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $grey-color;
+    background-color: $white-color;
+
+    transition: background-color $transition-timing $timing-function,
+      color $transition-timing $timing-function;
+  }
+  &.link:hover,
+  &.link:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+  &-icon {
+    fill: currentColor;
+  }
+}

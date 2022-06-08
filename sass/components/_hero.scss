@@ -1,0 +1,29 @@
+.section {
+    &.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $hero-color;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, $gradient, $gradient),
+    url("../images/webstudio/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+}
+.hero {
+    &-title {
+  margin-bottom: 30px;
+
+  color: $white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+    }
+}

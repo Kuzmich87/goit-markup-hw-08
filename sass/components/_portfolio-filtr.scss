@@ -1,0 +1,9 @@
+.list {
+    &.filtr {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;}
+   &.filtr .item-filtr + .item-filtr {
+  margin-left: 8px;
+}
+}

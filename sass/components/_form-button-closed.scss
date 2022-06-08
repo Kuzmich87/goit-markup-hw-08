@@ -1,0 +1,26 @@
+.button {
+  &-closed {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: 1px solid $button-closed-border-color;
+    background-color: transparent;
+
+    /*анимация кнопки*/
+    transition: background-color $transition-timing $timing-function,
+      fill $transition-timing $timing-function;
+  }
+  &-closed:focus,
+  &-closed:hover {
+    fill: $accent-color;
+  }
+}

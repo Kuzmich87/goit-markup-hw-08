@@ -1,0 +1,11 @@
+.container {
+  
+  &.header {display: flex;
+  align-items: center;}
+}
+
+/*Border headera на странице портфолио*/
+.section {
+  &-header.border {
+  border-bottom: 1px solid $header-border-color;}
+}
