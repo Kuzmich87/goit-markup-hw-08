@@ -24,7 +24,7 @@
   }
 
   /*Задает размер поля для текста в Наши преимущества*/
-  &__list .benefits-section__item {
+ &__list .benefits-section__item {
     width: 270px;
   }
   /*Задает расположение на раздел Наши преимущества*/
@@ -34,7 +34,7 @@
   &__list .benefits-section__item + .benefits-section__item {
     margin-left: 30px;
   }
-  /*Иконки в наших приемуществах*/
+
   &__icon {
     background-color: $second-white-color;
     display: flex;
@@ -43,6 +43,6 @@
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    border-radius: 4px;
+     border-radius: 4px;
   }
 }

@@ -20,13 +20,6 @@ ul {
   margin-bottom: 0;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -591,7 +584,6 @@ ul {
   /* Класс скрывает семантический заголовок*/
   /*Задает размер поля для текста в Наши преимущества*/
   /*Задает расположение на раздел Наши преимущества*/
-  /*Иконки в наших приемуществах*/
 }
 
 .benefits-section__title {
@@ -615,37 +607,6 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.benefits-section__list .benefits-section__item {
-  width: 270px;
-}
-
-.benefits-section__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.benefits-section__list .benefits-section__item + .benefits-section__item {
-  margin-left: 30px;
-}
-
-.benefits-section__icon {
-  background-color: #f5f4fa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
 }
 
 .conteiner-team {
