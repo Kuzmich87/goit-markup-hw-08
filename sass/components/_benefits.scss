@@ -1,4 +1,6 @@
 .benefits-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__title {
     color: $title-text-color;
     font-weight: 700;
@@ -7,6 +9,9 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   /* Класс скрывает семантический заголовок*/
   &__title.never {
@@ -24,15 +29,15 @@
   }
 
   /*Задает размер поля для текста в Наши преимущества*/
- &__list .benefits-section__item {
-    width: 270px;
+  &__list .benefits-section__item {
   }
-  /*Задает расположение на раздел Наши преимущества*/
+
   &__list {
-    display: flex;
-  }
-  &__list .benefits-section__item + .benefits-section__item {
-    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
 
   &__icon {
@@ -40,9 +45,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
-     border-radius: 4px;
+    border-radius: 4px;
+  }
+  &__item {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px)/2);
+      margin: 15px;
+    }
   }
 }

@@ -18,38 +18,22 @@ ul {
   margin-bottom: 0;
 }
 
-container {
+.container {
   padding-left: 15px;
   padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  // mobile screen from 480px
+  margin: 0 auto;
+  
   @media screen and (min-width: 480px) {
-    width: 448px;
+    width: 480px;
   }
-
-  @include mq(mobile) {
-    width: 448px;
+   @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  // tablet screen
-  // @media screen and (min-width: 768px) {
-  //   width: 720px;
-  // }
-
-  @include mq(tablet) {
-    width: 720px;
-  }
-  // desktop screen
-  // @media screen and (min-width: 1280px) {
-  //   width: 1200px;
-  // }
-
-  @include mq(desktop) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
