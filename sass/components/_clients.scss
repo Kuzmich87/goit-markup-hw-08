@@ -1,23 +1,32 @@
 .clients-section {
+    @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+  }
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+    }
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //padding-top: 32px;
+    //padding-bottom: 32px;
+    margin: -15px;
   }
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    //width: 170px;
     height: 92px;
     border: 1px solid $grey-color;
     border-radius: 4px;
@@ -35,9 +44,17 @@
     fill: currentColor;
   }
   &__item {
-    margin-right: 30px;
+      flex-basis: calc((100% - 4 * 15px)/2);
+      margin: 15px;
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 6 * 15px)/3);
+        margin: 15px;
+      }
+      @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 12 * 15px)/6);
+        margin: 15px;
+      }
   }
-  &__item:last-child {
-    margin-right: 0;
-  }
+ 
 }
