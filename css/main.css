@@ -605,10 +605,14 @@ ul {
 }
 
 .benefits-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
   /* Класс скрывает семантический заголовок*/
-  /*Задает размер поля для текста в Наши преимущества*/
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .benefits-section__title {
@@ -677,6 +681,14 @@ ul {
   .benefits-section__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px)/2);
         flex-basis: calc((100% - 4 * 15px)/2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-section__item {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px)/4);
+        flex-basis: calc((100% - 8 * 15px)/4);
     margin: 15px;
   }
 }

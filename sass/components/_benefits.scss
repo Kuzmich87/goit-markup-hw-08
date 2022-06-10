@@ -1,6 +1,8 @@
 .benefits-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    @media screen and (max-width:1199px) {
+      padding-top: 60px;
+    padding-bottom: 60px; 
+    }
   &__title {
     color: $title-text-color;
     font-weight: 700;
@@ -28,10 +30,6 @@
     overflow: hidden;
   }
 
-  /*Задает размер поля для текста в Наши преимущества*/
-  &__list .benefits-section__item {
-  }
-
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -57,5 +55,11 @@
       flex-basis: calc((100% - 4 * 15px)/2);
       margin: 15px;
     }
+    @media screen and (min-width: 1200px){
+      flex-basis: calc((100% - 8 * 15px)/4);
+      margin: 15px;
+    }
+      
+    }
   }
-}
+
