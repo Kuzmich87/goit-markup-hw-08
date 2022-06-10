@@ -1,8 +1,14 @@
 .list {
     &.filtr {
   display: flex;
-  margin-bottom: 34px;
-  justify-content: center;}
+  flex-wrap: wrap;
+  //margin-bottom: 34px;
+  margin-bottom: 40px;
+  
+  @media screen and (min-width: 768px) {
+   justify-content: center
+  }
+  ;}
    &.filtr .item-filtr + .item-filtr {
   margin-left: 8px;
 }
