@@ -1,13 +1,21 @@
 .conteiner {
     &-team {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   background-color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }   
+  }
     }
-}
-.section{
+.section {
     &.team {
-  background-color: $second-white-color;}
+  background-color: $second-white-color;
+  @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+}
 }
 .text {
     &-team {
@@ -18,11 +26,14 @@
 
 .title {
     &.team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;}
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }}
    &.name {
   font-weight: 500;
   font-size: 16px;
@@ -34,17 +45,30 @@
 /*Задает расположение на раздел Наша команда*/
 .list {
     &.team {
-  display: flex;}
-    &.team .item + .item {
-  margin-left: 30px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:-15px;}
 }
 /*Рамка для карточек Нашей команды*/
 .item {
     &.team{
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;}
+    border-radius: 0px 0px 4px 4px;
+
+    width: 100%;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px)/2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 9 * 15px)/4);
+      margin: 15px;
+    }}
+
 }
 
 /*=======================
