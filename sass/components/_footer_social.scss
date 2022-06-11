@@ -2,7 +2,12 @@
 .social {
   &-link {
     //margin-left: 70px;
-    margin-top: 60px;
+    @media screen and (max-width: 767px) {
+    margin-top: 60px;}
+    
+    @media screen and (min-width: 1200px){
+    margin-left:70px;}
+    
     min-width: 206px;
   }
 
@@ -49,5 +54,11 @@
   color: $white-color;
   text-transform: uppercase;
   margin-bottom: 20px;
-  text-align: center;}
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+  text-align:left;
+    }
+
+  }
 }
