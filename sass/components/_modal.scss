@@ -26,8 +26,15 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  /*height: 581px;*/
+  width: 96px;
+  //height: 609px;
+  
+  @media screen and (min-width:480px) {
+      width: 450px;
+    }
+  @media screen and (min-width:1200px) {
+      width: 528px;
+    }
 
   padding: 40px;
 
