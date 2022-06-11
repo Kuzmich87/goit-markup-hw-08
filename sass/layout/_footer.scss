@@ -10,10 +10,18 @@
 .footer {
   &.flex {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    //align-items: baseline;
   }
 }
 
 .address {
   margin-top: 20px;
+}
+
+.logo {
+  &-adress {
+    text-align: center;
+  }
 }

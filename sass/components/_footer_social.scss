@@ -1,7 +1,8 @@
 /*Стилизация ссылок ф футере соц.сети*/
 .social {
   &-link {
-    margin-left: 70px;
+    //margin-left: 70px;
+    margin-top: 60px;
     min-width: 206px;
   }
 
@@ -47,5 +48,6 @@
   &.social {
   color: $white-color;
   text-transform: uppercase;
-  margin-bottom: 20px;}
+  margin-bottom: 20px;
+  text-align: center;}
 }
