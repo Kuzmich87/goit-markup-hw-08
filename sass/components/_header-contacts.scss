@@ -3,14 +3,25 @@
   &.list {
     display: flex;
     margin-left: auto;
+    
 
+    @media screen and (min-width: 1200px) {
     & .item + .item {
-      margin-left: 50px;
+      margin-left: 30px;
     }
-
+    }
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 21px;  
+      padding-bottom: 21px;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+     }
   }
   /* Стиль написание шрифта и цвет контактов*/
   & .link {
@@ -19,21 +30,26 @@
     font-style: normal;
     color: inherit;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //padding-top: 32px;
+    //padding-bottom: 32px;
 
     color: $primary-text-color;
 
     transition: color $transition-timing $timing-function;
+
+    @media screen and (min-width:1200px) {
+    font-size: 14px;
+    }
   }
   & .link:hover,
   & .link:focus {
     color: $accent-color;
   }
+
 }
 
 /*Иконки конверта и телефона*/
@@ -41,11 +57,27 @@
 .icon {
   &-envelope {
   fill: currentColor;
-  margin-right: 10px;}
+  margin-right: 10px;
+  @media screen and (max-width:1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
   &-smartphone {
   fill: currentColor;
   margin-right: 10px;
+  @media screen and (max-width:1199px) {
+      width: 10px;
+      height: 14px;    
+    }
   }
+ }
+ .item {
+   &.contacts {
+  @media screen and (max-width:1199px) {
+   &:not(:last-child) {
+    margin-bottom: 10px;
+   }
+  }
+   }
 }
-
-
