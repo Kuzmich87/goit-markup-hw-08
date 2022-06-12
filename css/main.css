@@ -1566,7 +1566,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1575,20 +1575,24 @@ ul {
   transition: 250ms ease-in-out;
 }
 
+@media screen and (min-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
 .menu-toggle {
-  width: 40px;
-  height: 40px;
   border: none;
   background: #ffffff;
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
@@ -1597,5 +1601,17 @@ ul {
 .menu-toggle:hover, .menu-toggle:focus {
   color: #2196f3;
   fill: currentColor;
+}
+
+.menu-toggle .icon-cross {
+  display: none;
+}
+
+.menu-toggle.is-open .icon-cross {
+  display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
