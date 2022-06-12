@@ -47,4 +47,9 @@
     &-toggle.is-open .icon-menu {
         display: none;
         }
+    &-toggle.js-close-menu {
+        position: absolute;
+        top:21px;
+        right: 25px;
+    }
 }
