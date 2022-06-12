@@ -7,6 +7,10 @@
     & .item + .item {
       margin-left: 50px;
     }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
   /* Стиль написание шрифта и цвет контактов*/
   & .link {
