@@ -38,8 +38,8 @@
 
     margin-left: auto;}
     
-    &-toggle:hover,
-    &-toggle:focus {
+    &-toggle:active
+     {
         color: $accent-color;
         fill: currentColor;
     } 

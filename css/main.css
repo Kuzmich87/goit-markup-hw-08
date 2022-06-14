@@ -1632,7 +1632,7 @@ ul {
   }
 }
 
-.menu-toggle:hover, .menu-toggle:focus {
+.menu-toggle:active {
   color: #2196f3;
   fill: currentColor;
 }
