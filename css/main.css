@@ -1622,6 +1622,7 @@ ul {
   height: 40px;
   border: none;
   background: #ffffff;
+  z-index: 1000;
   margin-left: auto;
 }
 
@@ -1701,6 +1702,10 @@ ul {
   color: #2196f3;
 }
 
+.mobile-menu .link {
+  color: #212121;
+}
+
 .item-malito .link {
   font-weight: 500;
   font-size: 24px;
@@ -1712,6 +1717,10 @@ ul {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
+  color: #2196f3;
+}
+
+.item-social .link {
   color: #2196f3;
 }
 

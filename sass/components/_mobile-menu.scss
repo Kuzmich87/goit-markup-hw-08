@@ -34,6 +34,7 @@
     height: 40px;
     border: none;
     background:$white-color;
+    z-index: 1000;
 
     margin-left: auto;}
     
@@ -99,8 +100,15 @@
     }
     & .item.curret {
         color:$accent-color;
+    
     }
+ 
+    & .link {
+        color:$title-text-color;
+    }
+
 }
+
  .item-malito {
     & .link {
      font-weight: 500;
@@ -116,6 +124,12 @@
      color: $accent-color;
     }
  } 
+
+ .item-social {
+    & .link {
+    color: $accent-color;
+    }
+ }
 
 .mobile-social {
     & .link {
