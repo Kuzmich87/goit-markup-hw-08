@@ -48,9 +48,33 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="true" aria-controls="mobile-menu" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/webstudio/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/webstudio/symbol-defs.svg#icon-close"></use>
+          </svg>
       </div>
     </header>
     <main>
+      <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+        <div class="mobile-menu-link">
+          <ul class="mobile-menu">
+            <li class="item curret"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li class="item-tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item-malito"><a href="malito:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="item-social"><a href="" class="link">Instagram</a></li>
+            <li class="item-social"><a href="" class="link">Twitter</a></li>
+            <li class="item-social"><a href="" class="link">Facebook</a></li>
+            <li class="item-social"><a href="" class="link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
       <!--Фильтр и примеры работ-->
       <section class="section post">
         <div class="container">
@@ -393,5 +417,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/mobile-menu.js"></script>
   </body>
 </html>
